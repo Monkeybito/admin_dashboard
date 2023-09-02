@@ -36,8 +36,32 @@ body{
 }
 
 
-
 .content{
     grid-area: 2 / 2 / 3 / 3;
-    background-color: green;
+    background-color: rgb(187, 187, 187);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    color: black;
+    padding: min(15px, 15%);
+}
+
+.left{
+    display: grid;
+    grid-template-rows: min(50px, 5%) repeat(auto-fit, 250px);
+    grid-template-columns: repeat(auto-fit, 300px);
+    gap: 5px;
+}
+
+.project{
+    grid-column: 1 / -1;
+    align-self: center;
+}
+.boxes{
+    background-color: white;
+}
+
+.rigth{
+    display: grid;
+    grid-template-rows: min(50px, 5%) auto minmax(50px, 5%) auto;
+    gap: 5px;
 }
